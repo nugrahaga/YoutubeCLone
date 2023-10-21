@@ -66,6 +66,7 @@ public class HomeFragment extends Fragment {
 
         toolbar = view.findViewById(R.id.toolbar);
         ((MainActivity) getActivity()).setSupportActionBar(toolbar);
+        ((MainActivity) getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         HomeVideoAdapter.HomeVideoData data1 = new HomeVideoAdapter.HomeVideoData("Video 1", "Video 1 Description");
         HomeVideoAdapter.HomeVideoData data2 = new HomeVideoAdapter.HomeVideoData("Video 2", "Video 2 Description");

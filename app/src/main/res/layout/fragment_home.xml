@@ -22,7 +22,18 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/black"
                 app:layout_scrollFlags="scroll|enterAlways"
-                app:popupTheme="@style/Theme.YoutubeClone.PopUpOverlay" />
+                app:popupTheme="@style/Theme.YoutubeClone.PopUpOverlay" >
+                <ImageView
+                    android:id="@+id/toolbar_logo"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/youtube_logo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="YouTube"/>
+            </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
 
