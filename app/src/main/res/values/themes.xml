@@ -25,4 +25,20 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
+
+    <!-- Migration SplashScreen -->
+    <style name="Theme.YoutubeClone.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation
+   duration. -->
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <!-- Use windowSplashScreenAnimatedIcon to add a drawable or an animated
+        drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/youtube_logo</item>
+         Required for animated icons.
+        <item name="windowSplashScreenAnimationDuration">200</item>
+<!--        <item name="android:windowSplashScreenBrandingImage">@drawable/youtube_logo</item>-->
+        <!-- Set the theme of the Activity that directly follows your splash
+   screen. This is required. -->
+        <item name="postSplashScreenTheme">@style/Theme.YoutubeClone</item>
+    </style>
 </resources>
