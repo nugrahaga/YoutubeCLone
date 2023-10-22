@@ -1,4 +1,4 @@
-package com.example.youtubeclone;
+package com.example.youtubeclone.ui.home;
 
 import android.os.Bundle;
 
@@ -15,7 +15,10 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.ArrayList;
+import com.example.youtubeclone.R;
+import com.example.youtubeclone.data.repository.HomeVideoData;
+import com.example.youtubeclone.ui.MainActivity;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -68,18 +71,18 @@ public class HomeFragment extends Fragment {
         ((MainActivity) getActivity()).setSupportActionBar(toolbar);
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        HomeVideoAdapter.HomeVideoData data1 = new HomeVideoAdapter.HomeVideoData("Video 1", "Video 1 Description");
-        HomeVideoAdapter.HomeVideoData data2 = new HomeVideoAdapter.HomeVideoData("Video 2", "Video 2 Description");
-        HomeVideoAdapter.HomeVideoData data3 = new HomeVideoAdapter.HomeVideoData("Video 3", "Video 3 Description");
-        HomeVideoAdapter.HomeVideoData data4 = new HomeVideoAdapter.HomeVideoData("Video 4", "Video 4 Description");
-        HomeVideoAdapter.HomeVideoData data5 = new HomeVideoAdapter.HomeVideoData("Video 5", "Video 5 Description");
-        HomeVideoAdapter.HomeVideoData data6 = new HomeVideoAdapter.HomeVideoData("Video 6", "Video 6 Description");
-        HomeVideoAdapter.HomeVideoData data7 = new HomeVideoAdapter.HomeVideoData("Video 7", "Video 7 Description");
-        HomeVideoAdapter.HomeVideoData data8 = new HomeVideoAdapter.HomeVideoData("Video 8", "Video 8 Description");
-        HomeVideoAdapter.HomeVideoData data9 = new HomeVideoAdapter.HomeVideoData("Video 9", "Video 9 Description");
-        HomeVideoAdapter.HomeVideoData data10 = new HomeVideoAdapter.HomeVideoData("Video 10", "Video 10 Description");
+        HomeVideoData data1 = new HomeVideoData("Video 1", "Video 1 Description");
+        HomeVideoData data2 = new HomeVideoData("Video 2", "Video 2 Description");
+        HomeVideoData data3 = new HomeVideoData("Video 3", "Video 3 Description");
+        HomeVideoData data4 = new HomeVideoData("Video 4", "Video 4 Description");
+        HomeVideoData data5 = new HomeVideoData("Video 5", "Video 5 Description");
+        HomeVideoData data6 = new HomeVideoData("Video 6", "Video 6 Description");
+        HomeVideoData data7 = new HomeVideoData("Video 7", "Video 7 Description");
+        HomeVideoData data8 = new HomeVideoData("Video 8", "Video 8 Description");
+        HomeVideoData data9 = new HomeVideoData("Video 9", "Video 9 Description");
+        HomeVideoData data10 = new HomeVideoData("Video 10", "Video 10 Description");
 
-        List<HomeVideoAdapter.HomeVideoData> dataList = Arrays.asList(data1, data2, data3, data4, data5, data6, data7, data8, data9, data10);
+        List<HomeVideoData> dataList = Arrays.asList(data1, data2, data3, data4, data5, data6, data7, data8, data9, data10);
 
         HomeVideoAdapter adapter = new HomeVideoAdapter(dataList, getContext());
 

@@ -1,4 +1,4 @@
-package com.example.youtubeclone;
+package com.example.youtubeclone.ui.home;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,9 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.youtubeclone.R;
+import com.example.youtubeclone.data.repository.HomeVideoData;
 
 import java.util.Collections;
 import java.util.List;
@@ -42,8 +45,8 @@ public class HomeVideoAdapter extends RecyclerView.Adapter<HomeVideoAdapter.Home
     @Override
     public void onBindViewHolder(@NonNull HomeVideoViewHolder holder, int position) {
         final int index = holder.getAdapterPosition();
-        holder.videoTitle.setText(list.get(position).videoTitle);
-        holder.videoDescription.setText(list.get(position).videoDetail);
+        holder.videoTitle.setText(list.get(position).getVideoTitle());
+        holder.videoDescription.setText(list.get(position).getVideoDetail());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,17 +81,6 @@ public class HomeVideoAdapter extends RecyclerView.Adapter<HomeVideoAdapter.Home
             videoTitle = itemView.findViewById(R.id.video_title);
 
             videoDescription = itemView.findViewById(R.id.video_detail);
-        }
-    }
-
-    public static class HomeVideoData {
-        private String videoTitle;
-
-        private String videoDetail;
-
-        public HomeVideoData(String videoTitle, String videoDetail) {
-            this.videoTitle = videoTitle;
-            this.videoDetail = videoDetail;
         }
     }
 }

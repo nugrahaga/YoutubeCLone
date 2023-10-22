@@ -1,4 +1,4 @@
-package com.example.youtubeclone;
+package com.example.youtubeclone.ui;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -7,6 +7,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.youtubeclone.R;
+import com.example.youtubeclone.ui.account.AccountFragment;
+import com.example.youtubeclone.ui.home.HomeFragment;
+import com.example.youtubeclone.ui.shorts.ShortsFragment;
+import com.example.youtubeclone.ui.subscriptions.SubscriptionsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {

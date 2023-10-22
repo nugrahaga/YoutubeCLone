@@ -1,4 +1,4 @@
-package com.example.youtubeclone;
+package com.example.youtubeclone.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
