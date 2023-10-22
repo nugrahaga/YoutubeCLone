@@ -39,9 +39,21 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     implementation 'androidx.core:core-splashscreen:1.0.1'
+
+    // Hilt
     implementation "com.google.dagger:hilt-android:2.48.1"
     annotationProcessor "com.google.dagger:hilt-compiler:2.48.1"
 
-    implementation 'org.projectlombok:lombok:1.18.30'
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    // Networking
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.11'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11'
 }
