@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import com.example.youtubeclone.R;
 import com.example.youtubeclone.data.repository.HomeVideoData;
 import com.example.youtubeclone.ui.MainActivity;
+import com.example.youtubeclone.ui.home.adapter.HomeVideoAdapter;
 
 import java.util.Arrays;
 import java.util.List;
