@@ -18,6 +18,6 @@ public class Constants {
     //REGION_CODE
     public static final String REGION_CODE = "ID";
 
-    public static final String KEY = "AIzaSyC7TGD3Q-unCPnQ4duufMW-x10d1FhPOS8";
+    public static final String KEY = "";
 }
 
