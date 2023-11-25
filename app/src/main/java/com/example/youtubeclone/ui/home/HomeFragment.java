@@ -103,12 +103,10 @@ public class HomeFragment extends Fragment {
 
         viewModel.getPopularVideos().observe(getViewLifecycleOwner(), youtubeVideos -> {
             if (youtubeVideos != null) {
-                System.out.println("ADA ISINYA RESPONSE");
                 if (youtubeVideos.getData() != null) {
-                    System.out.println("ADA ISINYA DATA "+youtubeVideos.getData().getItems().size());
                     adapter.setList(youtubeVideos.getData().getItems());
                 } else {
-                    System.out.println("TIDAK ADA ISINYA");
+                    Logger.getLogger("HomeFragment").warning("youtubeVideos.getData() is null");
                 }
             }
 //            adapter.setList(youtubeVideos.getData().getItems());
