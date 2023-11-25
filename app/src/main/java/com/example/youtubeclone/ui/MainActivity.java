@@ -14,6 +14,9 @@ import com.example.youtubeclone.ui.shorts.ShortsFragment;
 import com.example.youtubeclone.ui.subscriptions.SubscriptionsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import dagger.hilt.android.AndroidEntryPoint;
+
+@AndroidEntryPoint
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     private BottomNavigationView bottomNavigationView;

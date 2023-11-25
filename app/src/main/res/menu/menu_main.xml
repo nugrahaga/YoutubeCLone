@@ -5,15 +5,15 @@
         android:title="Order"
         app:showAsAction="always"
         android:orderInCategory="30"
-        android:icon="@drawable/baseline_search_white_24"/>
+        android:icon="@drawable/baseline_search_24"/>
     <item android:id="@+id/notification"
         android:title="Order"
         app:showAsAction="always"
         android:orderInCategory="20"
-        android:icon="@drawable/baseline_notifications_white_24"/>
+        android:icon="@drawable/outline_notifications_24"/>
     <item android:id="@+id/cast"
         android:title="Order"
         app:showAsAction="always"
         android:orderInCategory="10"
-        android:icon="@drawable/baseline_cast_white_24"/>
+        android:icon="@drawable/outline_cast_24"/>
 </menu>
